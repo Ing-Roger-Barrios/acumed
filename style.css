@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.cont{
+    width: 100%;
+    height: 99.2px;
+    background-color: #fafafaee;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 0.5px #e4e4e4;
+    z-index: 2;
+}
+
+.header{
+    background-color: #fafafa;
+    
+    min-height: 70vh;
+    
+    align-items: center;
+}
+
+.menu{
+    max-width: 1100px;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    background-color: #fafafaee;
+    z-index: 3;
+    
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #323232;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #02b1f4;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 800px;
+    color: #02b1f4;
+    text-transform: uppercase;
+}
+.img-logo{
+    width: 200px;
+    margin-top: 10px;
+}
+
+#menu{
+    display: none;
+
+}
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    display: flex;
+    padding: 150px 0 150px 0;
+    
+}
+
+.header-text{
+    width: 50%;
+
+}
+
+.header-text h1{
+    line-height: #323232;
+    text-transform: uppercase;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+
+.header-text p {
+    font-size: 16px;
+    color: #818181;
+    margin-bottom: 45px;
+
+}
+
+.header-img{
+    width: 50%;
+    align-items: center;
+
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #02b1f4;
+    color: #ffffff;
+    border-radius: 15px;
+
+}
+
+.about{
+    padding: 100px 0;
+    display: flex;
+}
+.about-img{
+    width: 50%;
+}
+.about-img img{
+    width: 500px;
+    border-radius: 15px;
+
+}
+.about-text{
+    width: 50%;
+    margin-left: 25px;
+}
+.about-text h2{
+    color: #323232;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.about-text p{
+    font-size: 16px;
+    color: #818181;
+}
+.about-text ul{
+    padding-left: 30px;
+}
+.about-text ul li{
+    list-style: circle;
+    font-size: 16px;
+    color: #818181;
+}
+
+.servicios{
+    padding: 50px 0 100px 0;
+    text-align: center;
+    background-color: #fafafa;
+}
+.servicios h2{
+    color: #323232;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.servicios-content{
+    margin-top: 55px;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    
+}
+
+.servicio-1{
+    margin: 20px;
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    flex-basis: calc(25% - 20px);
+    
+}
+.servicio-1 img {
+    width: 50px;
+    height: 50px;
+}
+.servicio-1 h3{
+    font-size: 20px;
+    color: #323232;
+    text-transform: capitalize;
+}
+
+.formulario{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form{
+    padding: 25px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+form h2{
+    font-size: 25px;
+    color: #323232;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+.input-container{
+    position: relative;
+    z-index: 1;
+
+}
+.input-container > i{
+    padding: 14px;
+    border-radius: 50%;
+    background-color: #02b1f4;
+    color: #ffffff;
+    position: absolute;
+    font-size: 20px;
+    top: 4px;
+    left: 10px;
+}
+.input-container > input, textarea{
+    padding: 17px 15px 17px 65px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 35px;
+    background-color: transparent;
+    border: 2px solid #02b1f4;
+    font-size: 16px;
+    outline: none;
+    color: #323232;
+}
+textarea{
+    font-family: 'Poppins', sans-serif;
+    height: 150px;
+}
+
+
+::placeholder{
+    color: #a0a0a0;
+    font-size: 16px;
+}
+.btn{
+    background-color: #02b1f4;
+    padding: 17px 30px;
+    width: 100%;
+    border: 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.footer{
+    padding: 50px;
+    background-color: #fafafa;
+}
+.link ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.link ul li a{
+    color: #323232;
+    font-size: 17px;
+}
+.link ul li a:hover{
+    color: #02b1f4;  
+}
+
+
+@media (max-width:991px){
+    .menu{
+        padding: 10px;
+    }
+    .cont{
+        padding: 10px;
+        height: 86.17px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #ffffff;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .header{
+        min-height: 0vh;
+        padding: 80px 30px 50px 30px;
+    }
+    .header-content{
+        flex-direction: column;
+        padding: 5px 0 5px 0;
+    }
+    .header-text{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .header-text h1{
+        font-size: 40px;
+    }
+    .header-img{
+        width: 100%;
+    }
+    
+    .header-img img{
+        width: 100%;
+    }
+
+    .about{
+        padding: 30px;
+        flex-direction: column;
+
+    }
+    .about-img{
+        width: 100%;
+        order: 2;
+
+    }
+    .about-img img{
+        width: 100%;
+    }
+    .about-text{
+        width: 100%;
+        margin-left: 0;  
+        margin-bottom: 25px;
+    }
+    .about-text h2{
+        font-size: 40px;
+        text-align: center;
+    }
+    .about-text p{
+        align-items: center;
+    }
+    .about-text ul li{
+        font-size: 13px;
+    }
+    .servicios{
+        padding: 30px;
+        
+    }
+    .servicios h2{
+        font-size: 40px;
+    }
+    .servicios-content{
+        margin-top: 25px;
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        
+
+    }
+    .servicio-1{
+        margin-bottom: 20px;   
+        margin: 10px;
+        padding: 12px;
+        
+    }
+    .servicio-1 h3{
+        font-size: 18px;
+    }
+
+    .formulario{
+        padding: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    form{
+        width: 100%;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .link ul{
+        flex-direction: column;
+    }
+    .link ul li{
+        margin: 0 0 15px 0;
+    }
+
+}
+
+@media (max-width:550px){
+    .servicio-1 h3{
+        font-size: 11px;
+    }
+    .img-logo{
+        width: 130px;
+        margin-top: 5px;
+    }
+}
