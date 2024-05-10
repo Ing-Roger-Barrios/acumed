@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acumed</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,7 +20,7 @@
                 </label>
                 <nav class="navbar">
                     <ul>
-                        <li><a href="">Inicio</a></li>
+                        <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#nosotros">Nosotros</a></li>
                         <li><a href="#servicios">Servicios</a></li>
                         <li><a href="#contacto">Contacto</a></li>
@@ -26,7 +28,7 @@
                 </nav>
             </div>
         </div>
-        <div class="header-content container">
+        <div id="inicio" class="header-content container">
             <div class="header-text">
                 <br>
                 <h1> Centro Medico de Acupuntura</h1>
@@ -38,7 +40,7 @@
                     ¡Mas de 300 enfermedades! <br> <br>
                    <b> Recomendado por la OMS.</b>
                 </p>
-                <a href="#" class="btn-1">Contacto</a>
+                <a href="https://api.whatsapp.com/send?phone=51991363002&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20servicios%20." class="float btn-1" target="_blank" ><i class="fa-brands fa-whatsapp my-float"></i> Contacto</a>
             </div>
             <div class="header-img">
                 <img src="images/left.png" alt="">
@@ -74,140 +76,483 @@
 
     <main id="servicios" class="servicios">
         <h2>Servicios</h2>
+
+
         <div class="servicios-content container">
-            <div class="servicio-1">
-                <img  src="images/servicios/acupuntura.png" alt="">
-                <h3>Acupuntura</h3>
-            </div>
-            <div class="servicio-1">
-                <img  src="images/servicios/qigong.png" alt="">
-                <h3>Qigong</h3>
-            </div>
-            <div class="servicio-1">
-                <img  src="images/servicios/auriculoterapia.png" alt="">
-                <h3>Auriculoterapia</h3>
-            </div>
-            <div class="servicio-1">
-                <img  src="images/servicios/digitoterapia.png" alt="">
-                <h3>Digitopuntura</h3>
-            </div>
-            <div class="servicio-1">
-                <img  src="images/servicios/electroacupuntura.png" alt="">
-                <h3>Electroacupuntura</h3>
-            </div>
-            <div class="servicio-1">
-                <img  src="images/servicios/ventosa.png" alt="">
-                <h3>Ventosa</h3>
-            </div>
-            <div class="servicio-1">
-                <img  src="images/servicios/taichi.png" alt="">
-                <h3>Taichi</h3>
-            </div>
-            <div class="servicio-1">
-                <img  src="images/servicios/reflexologia.png" alt="">
-                <h3>Reflexologia</h3>
-            </div>
-            <div class="servicio-1">
-                <img  src="images/servicios/tuina.png" alt="">
-                <h3>Tuina</h3>
-            </div>
-            <div class="servicio-1">
-                <img  src="images/servicios/yoga.png" alt="">
-                <h3>Yoga</h3>
-            </div>
-            <div class="servicio-1">
-                <img  src="images/servicios/shiatsu.png" alt="">
-                <h3>Shiatsu</h3>
-            </div>
-            <div class="servicio-1">
-                <img  src="images/servicios/craneopuntura.png" alt="">
-                <h3>Craneopuntura</h3>
-            </div>
-            <div class="servicio-1">
-                <img  src="images/servicios/medicina.png" alt="">
-                <h3>Medicina tradicional china</h3>
-            </div>
-            <div class="servicio-1">
-                <img  src="images/servicios/diagnostico.png" alt="">
-                <h3>Diagnostico y Analisis</h3>
-            </div>
-            <div class="servicio-1">
-                <img  src="images/servicios/moxibustion.png" alt="">
-                <h3>Moxibustion</h3>
+
+            <!-- Modal Acupuntura-->
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                <div class="servicio-1">
+                    <img  src="images/servicios/acupuntura.png" alt="">
+                    <h3>Acupuntura</h3>   
+                </div>
+            </a>
+            <!-- Modal Acupuntura-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Acupuntura</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            La acupuntura es una antigua técnica de medicina china que utiliza agujas para aliviar el dolor y promover el bienestar al estimular puntos específicos en el cuerpo.
+                        </div>
+                        <div class="modal-footer">                      
+                            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=51991363002&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Acupuntura%20." class="float" target="_blank">
+                                <i class="fa-brands fa-whatsapp my-float"> </i> Consulta
+                            </a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
+            <!-- Modal Qigong-->
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal1" >
+                <div class="servicio-1">
+                    <img  src="images/servicios/qigong.png" alt="">
+                    <h3>Qigong</h3>   
+                </div>
+            </a>
+            <!-- Modal Qigong-->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Qigong</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            El Qigong es una práctica tradicional china que combina movimientos suaves, respiración consciente y meditación para mejorar la salud, aumentar la energía y promover la tranquilidad mental.
+                        </div>
+                        <div class="modal-footer">                      
+                            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=51991363002&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Qigong%20." class="float" target="_blank">
+                                <i class="fa-brands fa-whatsapp my-float"> </i> Consulta
+                            </a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Modal Auriculoterapia-->
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2" >
+                <div class="servicio-1">
+                    <img  src="images/servicios/auriculoterapia.png" alt="">
+                    <h3>Auriculoterapia</h3>   
+                </div>
+            </a>
+            <!-- Modal Auriculoterapia-->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Auriculoterapia</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            La auriculoterapia es una técnica terapéutica que se centra en estimular puntos específicos en la oreja para tratar una variedad de condiciones de salud, desde el dolor hasta el estrés, basándose en la idea de que la oreja contiene un mapa reflejo del cuerpo.
+                        </div>
+                        <div class="modal-footer">                      
+                            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=51991363002&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Auriculoterapia%20." class="float" target="_blank">
+                                <i class="fa-brands fa-whatsapp my-float"> </i> Consulta
+                            </a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Modal Digitopuntura-->
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal3" >
+                <div class="servicio-1">
+                    <img  src="images/servicios/digitoterapia.png" alt="">
+                    <h3>Digitopuntura</h3>   
+                </div>
+            </a>
+            <!-- Modal Digitopuntura-->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Digitopuntura</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            La digitopuntura es una técnica de medicina alternativa que utiliza la presión de los dedos en puntos específicos del cuerpo para aliviar el dolor, reducir el estrés y promover la salud y el bienestar.
+                        </div>
+                        <div class="modal-footer">                      
+                            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=51991363002&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Digitopuntura%20." class="float" target="_blank">
+                                <i class="fa-brands fa-whatsapp my-float"> </i> Consulta
+                            </a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Modal Electroacupuntura-->
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal4" >
+                <div class="servicio-1">
+                    <img  src="images/servicios/electroacupuntura.png" alt="">
+                    <h3>Electroacupuntura</h3>   
+                </div>
+            </a>
+            <!-- Modal Electroacupuntura-->
+            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Electroacupuntura</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            La electroacupuntura es una forma de acupuntura que utiliza agujas tradicionales junto con una leve corriente eléctrica para estimular los puntos de acupuntura, potenciando así los efectos terapéuticos de la acupuntura convencional.
+                        </div>
+                        <div class="modal-footer">                      
+                            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=51991363002&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Electroacupuntura%20." class="float" target="_blank">
+                                <i class="fa-brands fa-whatsapp my-float"> </i> Consulta
+                            </a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Modal Ventosa-->
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal5" >
+                <div class="servicio-1">
+                    <img  src="images/servicios/ventosa.png" alt="">
+                    <h3>Ventosa</h3>   
+                </div>
+            </a>
+            <!-- Modal Ventosa-->
+            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Ventosa</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            La ventosaterapia es una técnica terapéutica que utiliza ventosas para crear succión sobre la piel, lo que ayuda a mejorar la circulación sanguínea, aliviar el dolor muscular y reducir la inflamación.
+                        </div>
+                        <div class="modal-footer">                      
+                            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=51991363002&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Ventosas%20." class="float" target="_blank">
+                                <i class="fa-brands fa-whatsapp my-float"> </i> Consulta
+                            </a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Modal Taichi-->
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal6" >
+                <div class="servicio-1">
+                    <img  src="images/servicios/taichi.png" alt="">
+                    <h3>Taichi</h3>   
+                </div>
+            </a>
+            <!-- Modal Taichi-->
+            <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Taichi</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            El Tai Chi es una antigua práctica china que combina movimientos suaves y fluidos con respiración profunda y concentración mental para mejorar la salud, equilibrar la energía y promover la relajación.
+                        </div>
+                        <div class="modal-footer">                      
+                            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=51991363002&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Taichi%20." class="float" target="_blank">
+                                <i class="fa-brands fa-whatsapp my-float"> </i> Consulta
+                            </a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Modal Reflexologia-->
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal7" >
+                <div class="servicio-1">
+                    <img  src="images/servicios/reflexologia.png" alt="">
+                    <h3>Reflexologia</h3>   
+                </div>
+            </a>
+            <!-- Modal Reflexologia-->
+            <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Reflexologia</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            La reflexología es una técnica terapéutica que utiliza la presión en puntos específicos de los pies, manos y orejas para promover la relajación, aliviar el estrés y estimular el equilibrio y la salud en todo el cuerpo.
+                        </div>
+                        <div class="modal-footer">                      
+                            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=51991363002&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Reflexologia%20." class="float" target="_blank">
+                                <i class="fa-brands fa-whatsapp my-float"> </i> Consulta
+                            </a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Modal Tuina-->
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal8" >
+                <div class="servicio-1">
+                    <img  src="images/servicios/tuina.png" alt="">
+                    <h3>Tuina</h3>   
+                </div>
+            </a>
+            <!-- Modal Tuina-->
+            <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Tuina</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            El Tuina es una forma de masaje terapéutico de origen chino que utiliza técnicas de presión, fricción y estiramiento en puntos específicos del cuerpo para aliviar el dolor, mejorar la circulación y promover la salud y el bienestar.
+                        </div>
+                        <div class="modal-footer">                      
+                            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=51991363002&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Tuina%20." class="float" target="_blank">
+                                <i class="fa-brands fa-whatsapp my-float"> </i> Consulta
+                            </a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Modal Yoga-->
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal9" >
+                <div class="servicio-1">
+                    <img  src="images/servicios/yoga.png" alt="">
+                    <h3>Yoga</h3>   
+                </div>
+            </a>
+            <!-- Modal Yoga-->
+            <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Yoga</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            El yoga es una práctica ancestral que combina posturas físicas, respiración controlada y meditación para mejorar la flexibilidad, fortalecer el cuerpo, calmar la mente y promover la salud integral.
+                        </div>
+                        <div class="modal-footer">                      
+                            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=51991363002&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Yoga%20." class="float" target="_blank">
+                                <i class="fa-brands fa-whatsapp my-float"> </i> Consulta
+                            </a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Modal Shiatsu-->
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal10" >
+                <div class="servicio-1">
+                    <img  src="images/servicios/shiatsu.png" alt="">
+                    <h3>Shiatsu</h3>   
+                </div>
+            </a>
+            <!-- Modal Shiatsu-->
+            <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Shiatsu</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            El Shiatsu es una forma de terapia japonesa que utiliza la presión de los dedos, las manos y los codos en puntos específicos del cuerpo para aliviar el dolor, reducir el estrés y promover el equilibrio y la salud.
+                        </div>
+                        <div class="modal-footer">                      
+                            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=51991363002&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Shiatsu%20." class="float" target="_blank">
+                                <i class="fa-brands fa-whatsapp my-float"> </i> Consulta
+                            </a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Modal Craneopuntura-->
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal11" >
+                <div class="servicio-1">
+                    <img  src="images/servicios/craneopuntura.png" alt="">
+                    <h3>Craneopuntura</h3>   
+                </div>
+            </a>
+            <!-- Modal Craneopuntura-->
+            <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Craneopuntura</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            La craneopuntura es una técnica terapéutica que se basa en la estimulación de puntos específicos en el cuero cabelludo para tratar una variedad de condiciones de salud, incluyendo dolor, trastornos neurológicos y desequilibrios emocionales.
+                        </div>
+                        <div class="modal-footer">                      
+                            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=51991363002&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Craneopuntura%20." class="float" target="_blank">
+                                <i class="fa-brands fa-whatsapp my-float"> </i> Consulta
+                            </a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Medicina tradicional china-->
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal12" >
+                <div class="servicio-1">
+                    <img  src="images/servicios/medicina.png" alt="">
+                    <h3>Medicina tradicional china</h3>   
+                </div>
+            </a>
+            <!-- Medicina tradicional china-->
+            <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Medicina tradicional china</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            La Medicina Tradicional China (MTC) es un sistema de medicina milenario que se basa en la armonía entre el cuerpo, la mente y el entorno. Utiliza diversas técnicas como la acupuntura, la fitoterapia, el masaje (Tuina), la dietética y el Qigong para prevenir y tratar enfermedades, promover la salud y restaurar el equilibrio energético del cuerpo.
+                        </div>
+                        <div class="modal-footer">                      
+                            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=51991363002&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Medicina%20tradicional%20china%20." class="float" target="_blank">
+                                <i class="fa-brands fa-whatsapp my-float"> </i> Consulta
+                            </a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Diagnostico y Analisis-->
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal13" >
+                <div class="servicio-1">
+                    <img  src="images/servicios/diagnostico.png" alt="">
+                    <h3>Diagnostico y Analisis</h3>   
+                </div>
+            </a>
+            <!-- Diagnostico y Analisis-->
+            <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Diagnostico y Analisis</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            El diagnóstico y análisis en medicina tradicional china se basa en la observación detallada de los síntomas, la palpación de los pulsos, el examen de la lengua y la entrevista con el paciente. Estas técnicas se utilizan para identificar desequilibrios energéticos, determinar la causa subyacente de los síntomas y desarrollar un plan de tratamiento personalizado.
+                        </div>
+                        <div class="modal-footer">                      
+                            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=51991363002&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Diagnostico%20y%20Analisis%20." class="float" target="_blank">
+                                <i class="fa-brands fa-whatsapp my-float"> </i> Consulta
+                            </a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-
-
-
+            <!-- Moxibustion-->
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal14" >
+                <div class="servicio-1">
+                    <img  src="images/servicios/moxibustion.png" alt="">
+                    <h3 id="contacto">Moxibustion</h3>   
+                </div>
+            </a>
+            <!-- Moxibustion-->
+            <div class="modal fade" id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Moxibustion</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            La moxibustión es una técnica terapéutica de la medicina tradicional china que utiliza la hierba Artemisia vulgaris, también conocida como "moxa", para calentar y estimular puntos específicos del cuerpo. Se utiliza para aliviar el dolor, fortalecer el sistema inmunológico y promover el flujo de energía vital, conocido como "qi", a lo largo de los meridianos.
+                        </div>
+                        <div class="modal-footer">                      
+                            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=51991363002&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Moxibustion%20." class="float" target="_blank">
+                                <i class="fa-brands fa-whatsapp my-float"> </i> Consulta
+                            </a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </main>
 
-    <section id="contacto" class="formulario container">
-        <form action="" method="post" autocomplete="off">
-            <h2>Agenda Consulta</h2>
-            <div class="input-group">
-
-                <div class="input-container">
-                    <input type="text" name="name" placeholder="Nombre y Apellido">
-                    <i class="fa-solid fa-user"></i>
+ 
+    <section  class=" otro container">
+        <h3>Contacto</h3>
+        <div class="formulario ">
+            <form class="formu" action="https://formsubmit.co/barriosroger87@gmail.com" method="POST" autocomplete="off">
+                <h2>Agenda Consulta</h2>
+                <div class="input-grupo">
+    
+                    <div class="input-container">
+                        <input type="text" name="name" required placeholder="Nombre y Apellido">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" name="phone" required placeholder="Telefono Celular">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" required placeholder="Correo">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="input-container">
+                        <textarea name="message" placeholder="Detalle de la consulta" id="message"></textarea>
+                    </div>
+    
+                    <input type="submit"  class="btn-2" >
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#contacto">
+                    <input type="hidden" name="_captcha" value="false">
                 </div>
-                <div class="input-container">
-                    <input type="tel" name="phone" placeholder="Telefono Celular">
-                    <i class="fa-solid fa-phone"></i>
-                </div>
-                <div class="input-container">
-                    <input type="email" name="email" placeholder="Correo">
-                    <i class="fa-solid fa-user"></i>
-                </div>
-                <div class="input-container">
-                    <textarea name="message" placeholder="Detalle de la consulta" id=""></textarea>
-                </div>
-
-                <input type="submit" name="send" class="btn" onclick="myfunction()">
+            </form>
+            <div class="mapa">
+                <h3>Mapa de Ubicacion</h3> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d465.8771288026331!2d-66.15320389909101!3d-17.391585065857655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2sbo!4v1715308421776!5m2!1ses-419!2sbo" width="450" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </form>
-        <div class="mapa">
-            <h3>Mapa de Ubicacion</h3> 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d465.8771288026331!2d-66.15320389909101!3d-17.391585065857655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2sbo!4v1715308421776!5m2!1ses-419!2sbo" width="450" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        
     </section>
     <footer class="footer">
         <div class="footer-content container">
             <div class="link">
                 <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Nosotros</a></li>
-                    <li><a href="">Servicios</a></li>
+                    <li><a href="#contacto"> <b>Ubicacion:</b>  <br> Av. Heroinas #620 Piso 4to. Of. B, casi c/ Lanza </a></li>
+                    <li><a href="#contacto"> <b>Contacto: </b> <br> <b>Telf:</b>  4511608 - 4227433 Cochabamba, Bolivia <br> <b>Email:</b>  buyx@hotmail.com <br> <b>Web:</b> www.acupunturabolivia.com</a></li>
                     
                 </ul>
             </div>
         </div>
     </footer>
     
-    <?php
-        include("send.php");
-    ?>
-    
-    <script>
-        function myfunction(){
-            window.location.href="http://localhost/pagina"
-        }
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 </html>
